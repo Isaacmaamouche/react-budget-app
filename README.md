@@ -1,3 +1,20 @@
+# React Budget App
+
+This was built following the tutorial of Web Dev Simplified, with a few adjustements.
+
+# Local data management
+
+Budgets and expenses are managed as states. They are locally stored and retrieved using the localStorage API.
+More details in the src/hooks/useLocalStorage.js
+
+# Budget deletion
+
+Deleting a budget will trigger a confirmation modal. If the user proceeds with the deletion, all associated expenses will be deleted.
+
+# Dark mode FTW
+
+By default, the theme is Dark. A button at the top right corner allows the user to switch between them
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
