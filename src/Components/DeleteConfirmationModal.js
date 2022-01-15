@@ -11,7 +11,7 @@ export default function DeleteConfirmationModal({show, handleClose, id, openView
 
     function onCancel(id){
         handleClose();
-        if(getBudgetExpenses(id).lentgh > 0) openViewExpenseModal(id);
+        if(getBudgetExpenses(id).length > 0) openViewExpenseModal(id);
     }
 
     function onDelete(id){
