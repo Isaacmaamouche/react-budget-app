@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Modal } from "react-bootstrap";
 import { useBudgets } from "../Contexts/BudgetContext";
 import { currencyFormatter } from "../utils";

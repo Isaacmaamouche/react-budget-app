@@ -2,7 +2,7 @@
   "name": "my-budget-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://isaacmaamouche.github.io",
+  "homepage": ".",
   "dependencies": {
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",

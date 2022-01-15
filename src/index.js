@@ -9,7 +9,7 @@ import { ThemeProvider } from "./Contexts/ThemeContext"
 
 
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <ThemeProvider>
       <BudgetProvider>

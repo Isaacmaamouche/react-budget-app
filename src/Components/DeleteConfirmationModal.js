@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Modal } from "react-bootstrap";
 import { useBudgets } from "../Contexts/BudgetContext";
 import { useTheme } from "../Contexts/ThemeContext";
@@ -11,7 +12,9 @@ export default function DeleteConfirmationModal({show, handleClose, id, openView
 
     function onCancel(id){
         handleClose();
-        if(getBudgetExpenses(id).lentgh > 0) openViewExpenseModal(id);
+        if(getBudgetExpenses(id).length > 0) {
+            openViewExpenseModal(id)
+        };
     }
 
     function onDelete(id){

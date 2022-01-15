@@ -1,13 +1,12 @@
+import React from 'react';
 import { Card, ProgressBar, Stack, Button, Badge } from "react-bootstrap";
 import { currencyFormatter } from "../utils";
 import { useTheme } from "../Contexts/ThemeContext";
-import { useBudgets } from "../Contexts/BudgetContext";
 
 
 export default function BudgetCard(props){
 
     const {darkMode, setOutlineDarkMode} = useTheme();
-    const {deleteBudget} = useBudgets();
     const {id, name, amount, max, onAddExpenseClick, viewExpenseClick, onDeleteConfirmationModal} = props;
     const ratio = amount / max;
 

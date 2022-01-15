@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Container, Stack, Button} from "react-bootstrap";
 import AddBudgetModal from "./Components/AddBudgetModal";
@@ -40,13 +41,13 @@ function App() {
 
   const {darkMode, setDarkMode} = useTheme();
 
-  if(darkMode){
-    document.body.classList.remove('bg-light');
-    document.body.classList.add('bg-dark', 'text-light');
-  }else{
-    document.body.classList.remove('bg-dark', 'text-light');
-    document.body.classList.add('bg-light');
-  }
+  // if(darkMode){
+  //   document.querySelector('body').classList.remove('bg-light');
+  //   document.querySelector('body').classList.add('bg-dark', 'text-light');
+  // }else{
+  //   document.querySelector('body').classList.remove('bg-dark', 'text-light');
+  //   document.querySelector('body').classList.add('bg-light');
+  // }
 
   return (
     <>

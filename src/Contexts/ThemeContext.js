@@ -1,5 +1,4 @@
-import React, {createContext, useContext} from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
+import React, {createContext, useContext, useState} from 'react';
 
 const ThemeContext = createContext();
 
@@ -11,7 +10,7 @@ export function useTheme(){
 
 export const ThemeProvider = ({ children }) => {
   
-    const [darkMode, setDarkMode] = useLocalStorage('darkMode',true);
+    const [darkMode, setDarkMode] = useState(true);
     
     function setOutlineDarkMode(variant){
         if(darkMode) return variant
