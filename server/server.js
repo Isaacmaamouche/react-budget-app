@@ -18,7 +18,7 @@ app.use('^/$', (req, res, next) => {
             console.error(err);
             return res.status(500).send("Oups, une erreur serveur s'est produite ...")
         }
-        return res.send(data.replace("<div id='root'></div>", `<div id='root'>${ReactDOMServer.renderToString(
+        return res.send(data.replace('<div id="root"></div>', `<div id='root'>${ReactDOMServer.renderToString(
             <ThemeProvider>
             <BudgetProvider>
               <App />
